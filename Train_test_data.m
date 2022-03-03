@@ -1,23 +1,25 @@
-%% Load the training and testing audio files and return cepstrum 
+%% Load the training and testing audio files and return cepstrum
 % output shape is (nceptrum - 1)*L_u
 % where nc - ceptrum coeffiecents ( default - 20)
 %       L_u - lenght of the speach
 
-
 clear all;
 close all;
-folder = 'C:\Users\Achintha\OneDrive - University of Moratuwa\Desktop\Project\newdata\Data\Training_Data\'; 
-folderTest = 'C:\Users\Achintha\OneDrive - University of Moratuwa\Desktop\Project\newdata\Data\Test_Data\';
+folder = 'C:\Users\smyon\Desktop\Data\Training_Data\'; 
+folderTest = 'C:\Users\smyon\Desktop\Data\Test_Data';
+
 %% train data
 matfiles = dir(fullfile(folder, '*.wav'));
 nfiles = length(matfiles);
 nc = 20;
+
 for i = 1 : nfiles
 
     [y,Fs] = audioread(fullfile(folder, matfiles(i).name));
 %     figure;
 %     plot(y)
-    Y =y; %y(1:floor(Fs)); %take first 1.02 seconds
+    Y=y; %y(1:floor(Fs)); %take first 1.02 seconds
+
     %% Pre Emphasis 
     % amplify the high frequencies y(t) = x(t) - ax(t-1);
     alpha = 0.97;
@@ -26,7 +28,7 @@ for i = 1 : nfiles
     pre_emphasis_signal(2:length(Y),1) =Y(2:length(Y))-Y(1:length(Y)-1);
     %figure;
     %plot(pre_emphasis_signal)
-    
+
 
     %% frame blocking
     N = 256;
@@ -42,6 +44,8 @@ for i = 1 : nfiles
     
     c = mfcc(Ps,nc,40, 0, Fs, NFFT);
     c = c-(mean(c)+1e-8);
+    disp(c);
+    input('s')
     imagesc(c)
     %XTrain(:,:,:,i) = c;
     %rgbplot(pfftx)
@@ -52,8 +56,9 @@ for i = 1 : nfiles
 %     end
 %     figure;
     %waterfall(0:405,arr())
-    codebook=vq(c,8)
-    b
+    
+    %codebook=vq(c,8)
+    %b
 end
 
 %% test data
