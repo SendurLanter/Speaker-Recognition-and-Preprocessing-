@@ -13,7 +13,7 @@ matfiles = dir(fullfile(folder, '*.wav'));
 nfiles = length(matfiles);
 nc = 19;
 nk = 8;
-codedict = zeros(13,nc,nk);
+codedict = zeros(11,nc,nk);
 
 for i = 1 : nfiles+1
     if i>12
@@ -50,7 +50,7 @@ for i = 1 : nfiles+1
     
 end
 
-t = zeros(10,10);
+t = zeros(13,13);
 matfiles = dir(fullfile(folderTest, '*.wav'));
 nfiles = length(matfiles);
 for i = 1 : nfiles+1
@@ -80,7 +80,8 @@ for i = 1 : nfiles+1
 
     c = mfcc(Ps,nc,40, 0, Fs, NFFT);
     c = c-(mean(c)+1e-8);
-    for j=1:11
+
+    for j=1:13
         d = ED(c,squeeze(codedict(j,:,:)));
         [val,ind] = min(d,[],2);
         t(i,j) = sum(val);
