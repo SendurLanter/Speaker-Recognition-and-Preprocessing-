@@ -1,3 +1,6 @@
+%fs: sampling rate
+% cn:MFCCs
+
 function cn = mfcc(Ps,nceps,nfilters, startf, fs, n)
 
 fbank = melfrequency(nfilters, startf, fs, n);
