@@ -55,6 +55,8 @@ for i = 1 : n_files+1
     %calculating mfcc
     c = mfcc(Ps,nc,40, 0, Fs, NFFT);
     c = c-(mean(c)+1e-8);
+    
+    input('hi');
     imagesc(c)
 
     %forming codebook 
@@ -80,7 +82,7 @@ for i = 1 : n_files+1
         matfiles(i).name
     end
     
-    Y =y;
+    Y=y;
 
     %% Pre Emphasis
     % amplify the high frequencies y(t) = x(t) - ax(t-1);
