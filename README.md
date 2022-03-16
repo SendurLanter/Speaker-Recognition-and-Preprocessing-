@@ -6,7 +6,6 @@
          
 ## Link to the report:
          - Here is the link to the final report ( Overleaf viewer mode)
-         - [Report](https://www.overleaf.com/read/yzdypxtfcdwk)
-
+         - [Report] (https://www.overleaf.com/read/yzdypxtfcdwk)
 EEC201 final project
 
