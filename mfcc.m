@@ -4,7 +4,7 @@
 function cn = mfcc(Ps,nceps,nfilters, startf, fs, n)
 
 fbank = melfrequency(nfilters, startf, fs, n);
-size(fbank)
+%size(fbank)
 fbanks = fbank*Ps(1:257,:);
 fbanks(fbanks == 0) = realmin;
 fbanks = 20*log10(fbanks);
