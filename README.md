@@ -2,7 +2,7 @@
 
 ## Usage :
          - Simply download every file to the same directory and run the Main_test.m
-         - The code contains the speaker recognition on the extended training and test sets (i.e. original users + our own voice )
+         - The code contains the speaker recognition on the extended training and test sets (i.e. original users + our own voices )
          
 ## Link to the report:
  - Here is the link to the final report ( Overleaf viewer mode)
