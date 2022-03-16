@@ -1,4 +1,4 @@
-# Speaker-Recognition-and-Preprocessing- EL TIRADO
+# Speaker-Recognition-and-Preprocessing (EEC201 final project) - EL TIRADO
 
 ## Usage :
          - Simply download every file to the same directory and run the Main_test.m
@@ -7,5 +7,6 @@
 ## Link to the report:
  - Here is the link to the final report ( Overleaf viewer mode)
    [Report](https://www.overleaf.com/read/yzdypxtfcdwk)
-EEC201 final project
+
+
 
