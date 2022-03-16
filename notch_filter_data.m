@@ -1,20 +1,29 @@
 clear all;
 close all;
-folder = 'C:\Users\Achintha\OneDrive - University of Moratuwa\Desktop\Project\newdata\Data\Training_Data\'; 
-folderTest = 'C:\Users\Achintha\OneDrive - University of Moratuwa\Desktop\Project\newdata\Data\Test_Data\';
+
+pathTrain = 'Data\Training_Data';
+pathTest = 'Data\Test_Data';
+
+folder_train = pathTrain; 
+folder_test = pathTest;
 
 %% train data
-matfiles = dir(fullfile(folder, '*.wav'));
+matfiles = dir(fullfile(folder_train, '*.wav'));
 nfiles = length(matfiles);
 nc = 19;
 nk = 8;
 codedict = zeros(11,nc,nk);
-for i = 1 : nfiles
+for i = 1 : nfiles+1
 
-    [y,Fs] = audioread(fullfile(folder, matfiles(i).name));
-    matfiles(i).name
-%     figure;
-%     plot(y)
+    if i>12
+        [y,Fs] = audioread([pathTrain '\ごめんなさい.m4a']);
+        %disp('--------------------------------------------------------')
+    % load the waveform of data 
+    else
+        [y,Fs] = audioread(fullfile(folder_train, matfiles(i).name));
+        %print out the loaded filename
+        %matfiles(i).name
+    end
     Y =y; %y(1:floor(Fs)); %take first 1.02 seconds
     %% Pre Emphasis 
     % amplify the high frequencies y(t) = x(t) - ax(t-1);
@@ -22,9 +31,7 @@ for i = 1 : nfiles
     pre_emphasis_signal = zeros(length(Y),1);
     pre_emphasis_signal(1,1) = Y(1);
     pre_emphasis_signal(2:length(Y),1) =Y(2:length(Y))-Y(1:length(Y)-1);
-%pre_emphasis_signal=y;
-    %figure;
-    %plot(pre_emphasis_signal)
+
     
 
     %% frame blocking
@@ -41,7 +48,7 @@ for i = 1 : nfiles
     
     c = mfcc(Ps,nc,40, 0, Fs, NFFT);
     c = c-(mean(c)+1e-8);
-    imagesc(c)
+    %imagesc(c)
     %XTrain(:,:,:,i) = c;
     %rgbplot(pfftx)
 %     for i = 0:floor(length(Y)/(N-M))-1
@@ -55,19 +62,27 @@ for i = 1 : nfiles
     codedict(i,:,:) = codebook;
     
 end
-t = zeros(11,11);
-matfiles = dir(fullfile(folderTest, '*.wav'));
+t = zeros(10,13);
+matfiles = dir(fullfile(folder_test, '*.wav'));
 nfiles = length(matfiles);
-for i = 1 : nfiles
+for i = 1 : nfiles+1
     
-    [y,Fs] = audioread(fullfile(folderTest, matfiles(i).name));
-    matfiles(i).name
+     % load the waveform of data (this if section address special case for file that's not .wav format)
+    if i>9
+        [y,Fs] = audioread([pathTest '\ごめんなさい.m4a']);
+        
+    % load the waveform of data 
+    else
+        [y,Fs] = audioread(fullfile(folder_test, matfiles(i).name));
+        %print out the loaded filename
+        %matfiles(i).name
+    end
     fs = Fs;             % sampling rate
     f0 = 1000;                % notch frequency
     fn = fs/2;              % Nyquist frequency
     freqRatio = f0/fn;      % ratio of notch freq. to Nyquist freq.
     
-    notchWidth = 0.5;       % width of the notch
+    notchWidth = 0.1;       % width of the notch. Change here
     
     notchZeros = [exp( sqrt(-1)*pi*freqRatio ), exp( -sqrt(-1)*pi*freqRatio )];
     
@@ -105,7 +120,7 @@ for i = 1 : nfiles
     c = mfcc(Ps,nc,40, 0, Fs, NFFT);
     c = c-(mean(c)+1e-8);
    
-    for j=1:11
+    for j=1:13
         d = ED(c,squeeze(codedict(j,:,:)));
         [val,ind] = min(d,[],2);
         t(i,j) = sum(val);
@@ -115,6 +130,7 @@ for i = 1 : nfiles
 end
 
 t
+[v,user]=min(t,[],2)
     
 
 
