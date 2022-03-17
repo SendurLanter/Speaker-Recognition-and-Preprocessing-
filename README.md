@@ -26,8 +26,9 @@ Extended 1| 100% | 100%
 Extended 2| ? | 90% 
 
 ### Results in detail
+#### Original training set
 ![alt text](https://github.com/SendurLanter/Speaker-Recognition-and-Preprocessing-/blob/main/1.png?raw=true)
-
+#### Original test set
 ![alt text1](https://github.com/SendurLanter/Speaker-Recognition-and-Preprocessing-/blob/main/2.png?raw=true)
-
+#### Extended 1 test set
 ![alt text2](https://github.com/SendurLanter/Speaker-Recognition-and-Preprocessing-/blob/main/3.png?raw=true)
