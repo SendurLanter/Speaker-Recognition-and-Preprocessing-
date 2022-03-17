@@ -7,6 +7,7 @@
          line 85
          
 ## Link to the report:
+ - Report in the repo named SPEAKER_RECOGNITION_SYSTEM_final or download from Overleaf
  - Here is the link to the final report ( Overleaf viewer mode)
    [Report](https://www.overleaf.com/read/yzdypxtfcdwk)
 
