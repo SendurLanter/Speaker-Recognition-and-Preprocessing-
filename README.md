@@ -22,7 +22,7 @@
 Dataset | Training Acc. | Testing Acc.
 --- | --- | --- 
 Original| 100% | 100% 
---- | --- | --- 
+
 Extended 1| 100% | 100% 
---- | --- | --- 
+
 Extended 2| ? | 90% 
