@@ -14,7 +14,8 @@
  - All the datasets use for the training and testing can be found under the Data directory
  - Original dataset - 11 users 1 training sample per user, 8 users 1 testing sample per user
  - Extended dataset 1 - Original dataset + 1 train and 1 test voice sample from us.
- - Extended dataset 2 - Original dataset + different words (only appear in testset) such as sorry, yes, and why in other languages. ( Japanese, Mandarin )
+ - Extended dataset 2 - Original dataset + different words (only appear in testset) such as sorry, yes, and why in other languages. 
+ ( Japanese, Mandarin )
 
 ## Results:
 
@@ -23,7 +24,7 @@ Dataset | Training Acc. | Testing Acc.
 --- | --- | --- 
 Original| 100% | 100% 
 Extended 1| 100% | 100% 
-Extended 2| ? | 90% 
+Extended 2| - | 90% 
 
 ### Results in detail
 #### Original training set
