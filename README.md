@@ -26,4 +26,4 @@ Extended 1| 100% | 100%
 Extended 2| ? | 90% 
 
 ### Results in detail
-
+![alt text](https://github.com/SendurLanter/Speaker-Recognition-and-Preprocessing-/1.png?raw=true)
