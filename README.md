@@ -28,6 +28,7 @@ Extended 1| 100% | 100%
 
 ### Example of MFCC vectors in a 2D plane and the resulting VQ codewords (Test 5-6)
 ![alt text3](https://github.com/SendurLanter/Speaker-Recognition-and-Preprocessing-/blob/main/Figures/4.5.jpg?raw=true)
+![alt text3](https://github.com/SendurLanter/Speaker-Recognition-and-Preprocessing-/blob/main/Figures/fig6.jpg?raw=true)
 
 ### Results in detail
 #### Original training set (TEST 7)
@@ -36,5 +37,9 @@ Extended 1| 100% | 100%
 ![alt text1](https://github.com/SendurLanter/Speaker-Recognition-and-Preprocessing-/blob/main/Figures/2.png?raw=true)
 #### Extended 1 test set (TEST 9)
 ![alt text2](https://github.com/SendurLanter/Speaker-Recognition-and-Preprocessing-/blob/main/Figures/3.png?raw=true)
+#### Extended 2 test set
+![alt text2](https://github.com/SendurLanter/Speaker-Recognition-and-Preprocessing-/blob/main/Figures/table4.jpg?raw=true)
+#### ablation study
+![alt text2](https://github.com/SendurLanter/Speaker-Recognition-and-Preprocessing-/blob/main/Figures/table5.jpg?raw=true)
 #### notch filters (TEST 8)
 ![alt text2](https://github.com/SendurLanter/Speaker-Recognition-and-Preprocessing-/blob/main/Figures/table6.jpg?raw=true)
