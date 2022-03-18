@@ -13,12 +13,12 @@
 
 ## Datasets:
  - All the datasets use for the training and testing can be found under the Data directory
- - Original dataset - 11 users 1 training sample per user, 8 users 1 testing sample per user
- - Extended dataset 1 - Original dataset + 1 train and 1 test voice sample from us.
+ - Original dataset (Test 7) - 11 users 1 training sample per user, 8 users 1 testing sample per user
+ - Extended dataset 1 (Test 9) - Original dataset + 1 train and 1 test voice sample from us.
  - Extended dataset 2 - Original dataset + different words (only appear in testset) such as sorry, yes, and why in other languages. 
  ( Japanese, Mandarin )
   - Extended dataset 3 - Original dataset but remove the "pre-emphasis" function block (ablation study).
-  - Extended dataset 4 - Original dataset but use notch filters of different width on the voice sample.
+  - Extended dataset 4 (Test 8) - Original dataset but use notch filters of different width on the voice sample.
 
 ## Results:
 
