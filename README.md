@@ -17,7 +17,7 @@
  - Extended dataset 1 - Original dataset + 1 train and 1 test voice sample from us.
  - Extended dataset 2 - Original dataset + different words (only appear in testset) such as sorry, yes, and why in other languages. 
  ( Japanese, Mandarin )
-  - Extended dataset 3 - Original dataset but remove the "pre-emphasis" function block.
+  - Extended dataset 3 - Original dataset but remove the "pre-emphasis" function block (ablation study).
   - Extended dataset 4 - Original dataset but use notch filters of different width on the voice sample.
 
 ## Results:
