@@ -36,3 +36,5 @@ Extended 1| 100% | 100%
 ![alt text1](https://github.com/SendurLanter/Speaker-Recognition-and-Preprocessing-/blob/main/Figures/2.png?raw=true)
 #### Extended 1 test set (TEST 9)
 ![alt text2](https://github.com/SendurLanter/Speaker-Recognition-and-Preprocessing-/blob/main/Figures/3.png?raw=true)
+#### notch filters (TEST 8)
+![alt text2](https://github.com/SendurLanter/Speaker-Recognition-and-Preprocessing-/blob/main/Figures/table6.jpg?raw=true)
