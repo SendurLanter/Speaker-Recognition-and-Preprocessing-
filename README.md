@@ -6,6 +6,12 @@
          - To experiment with the notch filter ( Task 8 ), you can run the code notch_filter_data.m . You can change the filter width in
          line 85
          
+## Repository organization:
+ - Data folder contains the voice sample we used.
+ - src folder contains the source code of our project.
+ - Figures folder contains images used in this Readme
+
+
 ## Link to the report:
  - Report in the repo named Final_Report.pdf.pdf or download from [Overleaf](https://www.overleaf.com/read/yzdypxtfcdwk)
  - Presentation slide in the repo named Presentation.pptx or download from [Google Slide](https://docs.google.com/presentation/d/1_XmiSBVHOXC19QRkCU1uiK0fqnVT0Il3/edit?usp=sharing&ouid=116751163679535791293&rtpof=true&sd=true)
