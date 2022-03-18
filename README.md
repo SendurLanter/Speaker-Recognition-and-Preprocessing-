@@ -17,6 +17,8 @@
  - Extended dataset 1 - Original dataset + 1 train and 1 test voice sample from us.
  - Extended dataset 2 - Original dataset + different words (only appear in testset) such as sorry, yes, and why in other languages. 
  ( Japanese, Mandarin )
+  - Extended dataset 3 - Original dataset but remove the "pre-emphasis" function block.
+  - Extended dataset 4 - Original dataset but use notch filters of different width on the voice sample.
 
 ## Results:
 
@@ -25,6 +27,8 @@ Dataset | Training Acc. | Testing Acc.
 --- | --- | --- 
 Original| 100% | 100% 
 Extended 1| 100% | 100% 
+Extended 2| 100% | 92% 
+Extended 3| 100% | 92% 
 
 ### Example of MFCC vectors in a 2D plane and the resulting VQ codewords (Test 5-6)
 ![alt text3](https://github.com/SendurLanter/Speaker-Recognition-and-Preprocessing-/blob/main/Figures/4.5.jpg?raw=true)
@@ -39,7 +43,7 @@ Extended 1| 100% | 100%
 ![alt text2](https://github.com/SendurLanter/Speaker-Recognition-and-Preprocessing-/blob/main/Figures/3.png?raw=true)
 #### Extended 2 test set
 ![alt text2](https://github.com/SendurLanter/Speaker-Recognition-and-Preprocessing-/blob/main/Figures/table4.jpg?raw=true)
-#### ablation study
+#### Extended 3 test set (ablation study)
 ![alt text2](https://github.com/SendurLanter/Speaker-Recognition-and-Preprocessing-/blob/main/Figures/table5.jpg?raw=true)
-#### notch filters (TEST 8)
+#### Extended dataset 4: notch filters (TEST 8)
 ![alt text2](https://github.com/SendurLanter/Speaker-Recognition-and-Preprocessing-/blob/main/Figures/table6.jpg?raw=true)
