@@ -26,14 +26,13 @@ Dataset | Training Acc. | Testing Acc.
 Original| 100% | 100% 
 Extended 1| 100% | 100% 
 
+### Example of MFCC vectors in a 2D plane and the resulting VQ codewords (Test 5-6)
+![alt text3](https://github.com/SendurLanter/Speaker-Recognition-and-Preprocessing-/blob/main/Figures/4.5.jpg?raw=true)
 
 ### Results in detail
-#### Original training set
+#### Original training set (TEST 7)
 ![alt text](https://github.com/SendurLanter/Speaker-Recognition-and-Preprocessing-/blob/main/Figures/1.png?raw=true)
-#### Original test set
+#### Original test set (TEST 7)
 ![alt text1](https://github.com/SendurLanter/Speaker-Recognition-and-Preprocessing-/blob/main/Figures/2.png?raw=true)
-#### Extended 1 test set
+#### Extended 1 test set (TEST 9)
 ![alt text2](https://github.com/SendurLanter/Speaker-Recognition-and-Preprocessing-/blob/main/Figures/3.png?raw=true)
-
-### Test 5-6
-![alt text3](https://github.com/SendurLanter/Speaker-Recognition-and-Preprocessing-/blob/main/Figures/4.5.jpg?raw=true)
