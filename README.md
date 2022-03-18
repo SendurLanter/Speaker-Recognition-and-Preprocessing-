@@ -7,9 +7,9 @@
          line 85
          
 ## Link to the report:
- - Report in the repo named SPEAKER_RECOGNITION_SYSTEM_final or download from Overleaf
- - Here is the link to the final report ( Overleaf viewer mode)
-   [Report](https://www.overleaf.com/read/yzdypxtfcdwk)
+ - Report in the repo named Final_Report.pdf.pdf or download from [Overleaf](https://www.overleaf.com/read/yzdypxtfcdwk)
+ - Presentation slide in the repo named Presentation.pptx
+ - Here is the link for presentation video [Google Drive](https://drive.google.com/file/d/117qruDk5RExCeeEFHU1y7OrQVyKmrgAH/view?usp=sharing)
 
 ## Datasets:
  - All the datasets use for the training and testing can be found under the Data directory
