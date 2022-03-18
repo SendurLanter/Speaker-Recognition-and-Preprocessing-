@@ -8,7 +8,7 @@
          
 ## Link to the report:
  - Report in the repo named Final_Report.pdf.pdf or download from [Overleaf](https://www.overleaf.com/read/yzdypxtfcdwk)
- - Presentation slide in the repo named Presentation.pptx
+ - Presentation slide in the repo named Presentation.pptx or download from [Google Slide](https://docs.google.com/presentation/d/1_XmiSBVHOXC19QRkCU1uiK0fqnVT0Il3/edit?usp=sharing&ouid=116751163679535791293&rtpof=true&sd=true)
  - Here is the link for presentation video [Google Drive](https://drive.google.com/file/d/117qruDk5RExCeeEFHU1y7OrQVyKmrgAH/view?usp=sharing)
 
 ## Datasets:
